@@ -22,7 +22,7 @@ return (
 </td> 
 
 <td>
-<a href={`${this.props.video.url}`} id= {`lnkImage_${this.props.video._id}`}>
+<a href={`${this.props.video.url}`} >
 lien
 </a>
 </td> 
