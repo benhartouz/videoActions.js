@@ -25,7 +25,7 @@ return (
      
 <div>
      
-<center><h1>les dernières vidéos d'actualité de youtube </h1></center>
+<center><h1>les dernières vidéos d'actualité  </h1></center>
  {listVideos}   
 </div>
 )
