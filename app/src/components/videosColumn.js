@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux'; 
 import {fetchVideos} from '../actions/videoActions';
 import TableRowVideo from './tablerowvideo';
+import TableHeadVideo from './tableHeadvideo';
 var listVideos
 class videos extends React.Component { 
 constructor() {
@@ -24,9 +25,11 @@ render() {
 return (
      
 <div>
-     
-<center><h1>les dernières vidéos d'actualité </h1></center>
- {listVideos}   
+    <table>
+<TableHeadVideo />
+<tbody> {listVideos} </tbody>
+  
+ </table> 
 </div>
 )
 
@@ -47,5 +50,3 @@ return {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(videos);
-
-
